@@ -15,5 +15,5 @@ class LD52_API AInvasionPlayerState : public APlayerState
 	GENERATED_BODY()
 
 public:
-
+	AInvasionPlayerState();
 };

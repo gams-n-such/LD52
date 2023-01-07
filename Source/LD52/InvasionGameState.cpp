@@ -3,3 +3,8 @@
 
 #include "InvasionGameState.h"
 
+
+AInvasionGameState::AInvasionGameState()
+{
+
+}
