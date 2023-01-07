@@ -1,7 +1,7 @@
 // Copyright Denis Maximenko 2023
 
 
-#include "InvasionPlayerState.h"
+#include "Game/InvasionPlayerState.h"
 
 
 AInvasionPlayerState::AInvasionPlayerState()

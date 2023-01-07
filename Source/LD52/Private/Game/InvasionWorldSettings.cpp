@@ -1,7 +1,7 @@
 // Copyright Denis Maximenko 2023
 
 
-#include "InvasionWorldSettings.h"
+#include "Game/InvasionWorldSettings.h"
 
 
 AInvasionWorldSettings::AInvasionWorldSettings()

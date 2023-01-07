@@ -1,10 +1,10 @@
 ﻿// Copyright Denis Maximenko 2023
 
 
-#include "SpherePawn.h"
+#include "Units/SpherePawn.h"
 
-#include "PlanetInterface.h"
-#include "SphericalCoordinateSystemBFL.h"
+#include "Planet/PlanetInterface.h"
+#include "Planet/SphericalCoordinateSystemBFL.h"
 #include "Kismet/KismetMathLibrary.h"
 
 

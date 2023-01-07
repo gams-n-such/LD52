@@ -1,8 +1,8 @@
 ﻿// Copyright Denis Maximenko 2023
 
 
-#include "SphericalMovement.h"
-#include "SpherePawn.h"
+#include "Planet/SphericalMovement.h"
+#include "Units/SpherePawn.h"
 
 USphericalMovement::USphericalMovement()
 {

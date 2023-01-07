@@ -1,7 +1,7 @@
 // Copyright Denis Maximenko 2023
 
 
-#include "BaseSkill.h"
+#include "Skills/BaseSkill.h"
 
 
 ABaseSkill::ABaseSkill()

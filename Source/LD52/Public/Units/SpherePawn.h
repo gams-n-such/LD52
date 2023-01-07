@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "SphericalMovement.h"
+#include "Planet/SphericalMovement.h"
 #include "SpherePawn.generated.h"
 
 UCLASS()

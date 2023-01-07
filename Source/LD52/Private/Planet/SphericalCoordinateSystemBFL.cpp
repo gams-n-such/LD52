@@ -1,7 +1,7 @@
 ﻿// Copyright Denis Maximenko 2023
 
 
-#include "SphericalCoordinateSystemBFL.h"
+#include "Planet/SphericalCoordinateSystemBFL.h"
 
 #include "Kismet/KismetMathLibrary.h"
 
