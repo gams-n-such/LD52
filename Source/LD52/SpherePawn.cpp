@@ -33,7 +33,7 @@ float ASpherePawn::GetPlanetRadius()
 void ASpherePawn::SetLocationOnPlanet(FVector2D Vector2D)
 {
 	LocationOnSphere = Vector2D;
-	const FVector SpherePosition = USphericalCoordinateSystemBFL::To3D(Vector2D,PlanetRadius);
+	const FVector SpherePosition = USphericalCoordinateSystemBFL::To3D(Vector2D, PlanetRadius);
 	const FVector NewPosition = Planet->GetActorLocation() + SpherePosition;
 	SetActorLocation(NewPosition);
 }
@@ -42,4 +42,3 @@ FVector2D ASpherePawn::GetLocationOnPlanet()
 {
 	return USphericalCoordinateSystemBFL::To2D(GetActorLocation());
 }
-

@@ -34,5 +34,5 @@ protected:
 	UPROPERTY()
 	USphericalMovement* SphericalMovement;
 	UPROPERTY()
-	FVector2D LocationOnSphere;	
+	FVector2D LocationOnSphere;
 };
