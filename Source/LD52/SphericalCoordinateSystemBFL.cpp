@@ -1,4 +1,4 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Copyright Denis Maximenko 2023
 
 
 #include "SphericalCoordinateSystemBFL.h"
