@@ -3,3 +3,8 @@
 
 #include "InvasionGameMode.h"
 
+
+AInvasionGameMode::AInvasionGameMode()
+{
+	
+}
