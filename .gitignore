@@ -2,6 +2,8 @@
 .vs/*
 .idea/*
 
+enc_temp_folder/*
+
 # Compiled Object files
 *.slo
 *.lo
