@@ -6,6 +6,8 @@
 #include "GameFramework/WorldSettings.h"
 #include "InvasionWorldSettings.generated.h"
 
+class ABaseSkill;
+
 /**
  * 
  */
@@ -15,9 +17,11 @@ class LD52_API AInvasionWorldSettings : public AWorldSettings
 	GENERATED_BODY()
 
 public:
+	AInvasionWorldSettings();
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	float StartingBiomass;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	float AvailableSkills;
+	TArray<TSubclassOf<ABaseSkill>> AvailableSkills;
 };
