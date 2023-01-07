@@ -5,13 +5,20 @@
 
 #include "PlanetInterface.h"
 #include "SphericalCoordinateSystemBFL.h"
+#include "Kismet/KismetMathLibrary.h"
 
 
 ASpherePawn::ASpherePawn()
-	: LocationOnSphere (0,0)
+	: LocationOnPlanet (0,0)
 {
 	PrimaryActorTick.bCanEverTick = true;
 	SphericalMovement =  CreateDefaultSubobject<USphericalMovement>(TEXT("SphericalMovement"));
+}
+
+void ASpherePawn::BeginPlay()
+{
+	Super::BeginPlay();
+	SphericalMovement->SetOwnerSpherePawn(this);
 }
 
 void ASpherePawn::SetPlanet(APawn* NewPlanet)
@@ -32,13 +39,20 @@ float ASpherePawn::GetPlanetRadius()
 
 void ASpherePawn::SetLocationOnPlanet(FVector2D Vector2D)
 {
-	LocationOnSphere = Vector2D;
+	LocationOnPlanet = Vector2D;
 	const FVector SpherePosition = USphericalCoordinateSystemBFL::To3D(Vector2D, PlanetRadius);
-	const FVector NewPosition = Planet->GetActorLocation() + SpherePosition;
-	SetActorLocation(NewPosition);
+	const FVector NewLocation = Planet->GetActorLocation() + SpherePosition;
+	const FVector Direction = NewLocation -GetActorLocation();
+	const FRotator ActorRotator = UKismetMathLibrary::MakeRotFromZX(SpherePosition - Planet->GetActorLocation() , Direction);
+	SetActorLocationAndRotation(NewLocation, ActorRotator);
 }
 
 FVector2D ASpherePawn::GetLocationOnPlanet()
 {
-	return USphericalCoordinateSystemBFL::To2D(GetActorLocation());
+	return LocationOnPlanet;
+}
+
+USphericalMovement* ASpherePawn::GetSphericalMovement()
+{
+	return SphericalMovement;
 }

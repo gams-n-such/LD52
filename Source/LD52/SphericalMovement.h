@@ -25,6 +25,11 @@ public:
 	float GetSpeed() const {return Speed; }
 
 	UFUNCTION(BlueprintCallable, Category="SphericalMovement")
+	void SetOwnerSpherePawn(ASpherePawn* NewOwnerSpherePawn);
+	UFUNCTION(BlueprintCallable, Category="SphericalMovement")
+	ASpherePawn* GetOwnerSpherePawn() const {return OwnerSpherePawn; }
+
+	UFUNCTION(BlueprintCallable, Category="SphericalMovement")
 	void MoveTo(FVector2D Vector2D);
 
 protected:
@@ -33,7 +38,7 @@ protected:
 	UPROPERTY(BlueprintReadWrite, Category="SphericalMovement")
 	float Speed;
 	UPROPERTY(BlueprintReadWrite, Category="SphericalMovement")
-	FVector2D TargetPosition;
+	FVector2D TargetLocation;
 	UPROPERTY(BlueprintReadWrite, Category="SphericalMovement")
 	bool IsMoving;
 	UPROPERTY(BlueprintReadWrite, Category="SphericalMovement")

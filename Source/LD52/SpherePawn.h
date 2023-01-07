@@ -13,6 +13,7 @@ class LD52_API ASpherePawn : public APawn
 
 public:
 	ASpherePawn();
+	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintCallable, Category="ASpherePawn")
 	void SetPlanet(APawn* NewPlanet);
@@ -25,6 +26,9 @@ public:
 	void SetLocationOnPlanet(FVector2D Vector);
 	UFUNCTION(BlueprintCallable, Category="ASpherePawn")
 	FVector2D GetLocationOnPlanet();
+
+	UFUNCTION(BlueprintCallable, Category="ASpherePawn")
+	USphericalMovement* GetSphericalMovement();
 	
 protected:
 	UPROPERTY()
@@ -34,5 +38,5 @@ protected:
 	UPROPERTY()
 	USphericalMovement* SphericalMovement;
 	UPROPERTY()
-	FVector2D LocationOnSphere;
+	FVector2D LocationOnPlanet;
 };
