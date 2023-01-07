@@ -9,12 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f30a850-675a-442d-a4b3-fcb8cd54b86f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Art/T_Space.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Galaxy.umap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/HUD/WBP_Galaxy.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/HUD_Galaxy.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/NewGameMode.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Data/DA_Trooper.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Data/PDA_Card.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/HUD/Planet/WBP_Card.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/HUD/Planet/WBP_PLanet.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/HUD_Planet.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD52/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD52/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/NewGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/NewGameMode.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +34,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Games\LD52" type="CppProject" factoryName="C++ Project" temporary="true">
       <configuration_1>
@@ -216,7 +217,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673079927827</updated>
-      <workItem from="1673079956394" duration="735000" />
+      <workItem from="1673079956394" duration="1927000" />
     </task>
     <servers />
   </component>
