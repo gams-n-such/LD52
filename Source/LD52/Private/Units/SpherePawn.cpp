@@ -21,13 +21,13 @@ void ASpherePawn::BeginPlay()
 	SphericalMovement->SetOwnerSpherePawn(this);
 }
 
-void ASpherePawn::SetPlanet(APawn* NewPlanet)
+void ASpherePawn::SetPlanet(AActor* NewPlanet)
 {
 	Planet = NewPlanet;
 	PlanetRadius = IPlanetInterface::Execute_GetRadius(NewPlanet);
 }
 
-APawn* ASpherePawn::GetPlanet()
+AActor* ASpherePawn::GetPlanet()
 {
 	return Planet;
 }
@@ -55,4 +55,14 @@ FVector2D ASpherePawn::GetLocationOnPlanet()
 USphericalMovement* ASpherePawn::GetSphericalMovement()
 {
 	return SphericalMovement;
+}
+
+void ASpherePawn::MoveTo(FVector2D Vector2D)
+{
+	SphericalMovement->MoveTo(Vector2D);
+}
+
+void ASpherePawn::MoveTo3D(FVector Vector)
+{
+	SphericalMovement->MoveTo(USphericalCoordinateSystemBFL::To2D(Vector));
 }
