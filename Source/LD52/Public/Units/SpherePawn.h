@@ -16,9 +16,9 @@ public:
 	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintCallable, Category="ASpherePawn")
-	void SetPlanet(APawn* NewPlanet);
+	void SetPlanet(AActor* NewPlanet);
 	UFUNCTION(BlueprintCallable, Category="ASpherePawn")
-	APawn* GetPlanet();
+	AActor* GetPlanet();
 	UFUNCTION(BlueprintCallable, Category="ASpherePawn")
 	float GetPlanetRadius();
 
@@ -29,13 +29,18 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category="ASpherePawn")
 	USphericalMovement* GetSphericalMovement();
+
+	UFUNCTION(BlueprintCallable, Category="SphericalMovement")
+	void MoveTo(FVector2D Vector2D);
+	UFUNCTION(BlueprintCallable, Category="SphericalMovement")
+	void MoveTo3D(FVector Vector);
 	
 protected:
 	UPROPERTY()
-	APawn* Planet;
+	AActor* Planet;
 	UPROPERTY()
 	float PlanetRadius;
-	UPROPERTY()
+	UPROPERTY(BlueprintReadOnly)
 	USphericalMovement* SphericalMovement;
 	UPROPERTY()
 	FVector2D LocationOnPlanet;
