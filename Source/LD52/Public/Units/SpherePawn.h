@@ -35,7 +35,7 @@ protected:
 	APawn* Planet;
 	UPROPERTY()
 	float PlanetRadius;
-	UPROPERTY()
+	UPROPERTY(BlueprintReadOnly)
 	USphericalMovement* SphericalMovement;
 	UPROPERTY()
 	FVector2D LocationOnPlanet;
