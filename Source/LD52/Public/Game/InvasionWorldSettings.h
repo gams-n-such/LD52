@@ -24,4 +24,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	TArray<TSubclassOf<ABaseSkill>> AvailableSkills;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	FName NextLevel;
 };
