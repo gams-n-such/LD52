@@ -23,8 +23,8 @@ public:
 	float StartingBiomass;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	TArray<TSubclassOf<ABaseSkill>> AvailableSkills;
+	FName NextLevel;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	FName NextLevel;
+	USoundBase* Music;
 };
