@@ -7,6 +7,7 @@
 #include "InvasionWorldSettings.generated.h"
 
 class ABaseSkill;
+class USoundBase;
 
 /**
  * 
